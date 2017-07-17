@@ -1,0 +1,19 @@
+{
+	"admin": [{
+		"name": "victor osuyak",
+		"cellNumber": "555-555-1111",
+		"email": "victor@gmail.com",
+		"pantryName": "Lincoln Square Pantry",
+		"pantryPhoneNumber": "555-555-0000",
+		"pantryLocation": "1111 west pantry Ave",
+		"offer": [{
+			"itemName": "Apples",
+			"itemAmount": "6",
+			"itemStatus": [
+				"available", false,
+				"pending", false,
+				"accepted", true
+			]
+		}]
+	}]
+}

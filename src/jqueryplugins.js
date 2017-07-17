@@ -1,5 +1,7 @@
 $(document).ready(function(){
-// Activate the side menu 
-       	$(".button-collapse").sideNav();
-           console.log('web app');
-});
+    // side bar navgation slide
+        $(".button-collapse").sideNav();
+    //modal pop up
+        $('.modal').modal();
+}); //document 
+

@@ -1,0 +1,17 @@
+// variables
+    // font
+    $fontexample: Helvetica, sans-serif;
+    //colors
+    $example:darkblue;
+
+//mixins
+@mixin parentTextStyle{
+    color: $example;
+    font-size: 3em;
+}//@include parentTextStyle;
+@mixin boxStyle{
+    border: solid $example 1px;
+    padding: 1em;
+    border-radius: 12px;
+}
+

@@ -1,0 +1,35 @@
+@import "./src/variablestyle.scss";
+$sideWidthNavWidth: 300px;//change this value in jqueryplugins.js @ sideNavWidth
+.side-nav-icon{
+    position: absolute;
+    color: black;
+    left: 12px;
+    top: 15px;
+    font-size: 2em;
+}
+.user-view{
+    .background{
+        background: lightblue;
+    }
+    .name-details{
+        margin-top:20px;
+        p{}
+        .pantry-name{
+            font-weight: bold;
+        }
+        .admin-name{
+            color: gray;
+        }
+    }
+}
+.key-pages-side-nav{
+    background: lightgray;
+    margin-top: 10px;
+    ul{
+        li{
+
+        }
+    }
+}
+
+
