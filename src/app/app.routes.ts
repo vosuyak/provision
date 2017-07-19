@@ -8,12 +8,22 @@ import { TopnavComponent } from './topnav/topnav.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { SigninnavComponent } from "./signinnav/signinnav.component";
 import { AlloffersComponent} from "./alloffers/alloffers.component";
+import { HomeComponent } from "./home/home.component";
+import { AuthguardGuard } from "./authguard.guard";
 
 export const router: Routes = [
-    {path:'',redirectTo:'/',pathMatch:'full'},
-    {path:'dashboard', component: DashboardComponent},
-    {path:'signup', component: SignupComponent},
+    // {path:'',redirectTo:'/home',pathMatch:'full'},
+    {
+        path:'',
+        component:HomeComponent
+    },
+    {
+        path:'dashboard', 
+        // pathMatch: 'full',
+        // canActivate:[AuthguardGuard],
+        component: DashboardComponent
+    },
     {path:'alloffers', component: AlloffersComponent}
-]
+];
 
 export const routes: ModuleWithProviders = RouterModule.forRoot(router);

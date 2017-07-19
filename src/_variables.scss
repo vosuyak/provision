@@ -1,0 +1,43 @@
+
+/*
+  BREAKPOINTS
+  this is a mobile first UI with < 599px set as the default
+  breakpoint shortcuts are used with media queries, e.g., 
+  `@include screen(l) {}` returns `@media screen and (min-width: 1200px) {}` (see helpers/mixins > screen)
+*/
+$breakpoints: (
+  s: 600px,
+  m: 992px, 
+  l: 1200px,
+  xl: 1440px
+) !default;
+
+/*
+  COLORS
+  maps is used with `color()` function, e.g., 
+  `color: color(purple)` returns `color: #8860ED;` (see helpers/functions > color)
+*/
+//map defines color names (color values should not be hard-coded in the css)
+$colors: (
+  white: #ffffff,
+  black: #000000,
+  darkgray: #221F20,
+  gray: #404041,
+  navgray: #F9F9F9,
+  lightgray: #989B9D,
+  lightergray: #CACCCE,
+  lightestgray: #E7E4E3,
+  brown: #776961,
+  rose: #FAB7A9,
+  gold: #B49334  
+);
+
+
+@function color($key: reg) {
+  @if map-has-key($colors, $key) {
+    @return map-get($colors, $key);
+  } @else {
+    @warn "Unknown `#{$key}` in $colors map";
+    @return $color;
+  }
+}

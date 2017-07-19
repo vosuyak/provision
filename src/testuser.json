@@ -7,13 +7,33 @@
 		"pantryPhoneNumber": "555-555-0000",
 		"pantryLocation": "1111 west pantry Ave",
 		"offer": [{
-			"itemName": "Apples",
-			"itemAmount": "6",
-			"itemStatus": [
-				"available", false,
-				"pending", false,
-				"accepted", true
-			]
+			"frozen":{
+				"itemName": "Brocolli",
+				"itemAmount": "4",
+				"itemStatus": [
+					"available", false,
+					"pending", false,
+					"accepted", true
+				]
+			},
+			"dry":{
+				"itemName": "Pancake Mix",
+				"itemAmount": "2",
+				"itemStatus": [
+					"available", false,
+					"pending", false,
+					"accepted", true
+				]
+			},
+			"fresh":{
+				"itemName": "Apples",
+				"itemAmount": "6",
+				"itemStatus": [
+					"available", false,
+					"pending", false,
+					"accepted", true
+				]
+			}
 		}]
 	}]
 }

@@ -1,1 +1,32 @@
-<h1>Sign Up</h1>
+<div class="container register">
+    <div class="home-hello row">
+          <p><b>Provision </b>is a communication platform to help food pantries work together to <b>reduce food waste.</b></p>
+      </div>
+  <div class="sign-in-container">
+    <div class="login-hello">
+      <p>Login</p>
+    </div>
+      <form action="" #form="ngForm"  (ngSubmit)="loginUser(form.value)">
+      <div class="row">
+        <div class="input-field col s12">
+          <input [(ngModel)]="username" placeholder="username or email" name="username" id="username" type="text" class="validate">
+          <i>email</i>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input [(ngModel)]="password"  placeholder="password"name="password" id="password" type="password" class="validate">
+          <i>password</i>
+          <!-- <label for="password">Password</label> -->
+        </div>
+      </div>
+      <div *ngIf="error" id="submit-error" class="submit-error">oops, try again</div>
+      <div class="row button">
+        <button class="submit-btn" type="submit" value="Login"><p>Submit</p></button>
+      </div>
+      </form>
+  </div> 
+</div>
+    <div class="need-help">
+      <p><b>Need help?</b><a href="mailto:someone@yoursite.com"> provision@vsapartners.com</a></p>
+    </div>

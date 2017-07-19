@@ -1,7 +1,7 @@
 // ag-
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes, Router } from '@angular/router';
 import { HttpModule } from "@angular/http";
 import { FormsModule } from "@angular/forms";
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -13,8 +13,11 @@ import { AppComponent } from './app.component';
 import { SignupComponent } from './signup/signup.component';
 import { SigninnavComponent } from "./signinnav/signinnav.component";
 import { DataService } from "./data.service";
-import { routes } from "./app.routes";
+import { UserService } from "./user.service";
+import { AuthguardGuard } from "./authguard.guard";
 import { AlloffersComponent } from './alloffers/alloffers.component';
+import { HomeComponent } from './home/home.component';
+import { routes } from "./app.routes";
 
 
 @NgModule({
@@ -26,6 +29,7 @@ import { AlloffersComponent } from './alloffers/alloffers.component';
     TopnavComponent,
     DashboardComponent,
     AlloffersComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,7 +38,7 @@ import { AlloffersComponent } from './alloffers/alloffers.component';
     BrowserAnimationsModule,
     routes
   ],
-  providers: [DataService],
+  providers: [UserService,AuthguardGuard,DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

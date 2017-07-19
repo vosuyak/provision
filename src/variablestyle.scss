@@ -1,8 +1,13 @@
+@import "./src/_variables.scss";  
+@import "./src/_mixins.scss";
 // variables
     // font
+    $mont: 'Montserrat', sans-serif;
+    $open: 'Open Sans', sans-serif;
     $fontexample: Helvetica, sans-serif;
     //colors
     $example:darkblue;
+    $nasty-green:#84a43d;
 
 //mixins
 @mixin parentTextStyle{

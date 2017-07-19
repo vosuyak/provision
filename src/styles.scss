@@ -1,2 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 @import "/variablestyle.scss";
+.full-page{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    margin:0;
+    -webkit-width: 100vw;
+    -webkit-height: 100vh;
+    background: #43c7da url("../src/images/background.jpg") no-repeat 25% 75% ;
+    background-size: cover;
+    
+}

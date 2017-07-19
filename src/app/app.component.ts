@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { DataService } from "./data.service";
+import { UserService } from "./user.service";
 
 @Component({
   selector: 'app-root',
@@ -7,16 +7,11 @@ import { DataService } from "./data.service";
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  constructor(private dataService:DataService){
+  constructor(private UserService:UserService){
 
 
   }
-  someProperty:string = '';
   ngOnOnIt(){
-    console.log('hello');
-    
-    console.log(this.dataService.users);
-    this.someProperty = this.dataService.myData();
+
   }
-  title = 'app';
 }

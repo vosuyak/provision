@@ -1,4 +1,90 @@
 @import "./src/variablestyle.scss";
-h1{
 
+.register{
+    width: 100%;
+        width: 100%;
+        margin: auto;
+        margin-top: 7%;
+}
+.sign-in-container{
+    font-family: $mont;
+    margin: 0 auto;
+    max-width: 400px;
+    padding: 2em 3em;
+    position:relative;
+    background-color: rgba(0, 99, 106, 0.45);
+    .input-field{
+        input{
+            margin-bottom: 0;
+        }
+        i{
+            color: white;
+        }
+    }
+    input::placeholder{
+        opacity:.6;
+        color: rgba(255, 255, 255, 1);
+        font-style: italic;
+        font-weight:light;
+    }
+    .button{
+        margin: 0;
+        width:100%;
+        display: flex;
+    }
+    .submit-error{
+        color: #ae2c45;
+        margin-bottom: 9px;
+        font-size: 12px;
+        text-align: center;
+    }
+    button{
+        width:139px;
+        height:20px;
+        background:white;
+        color: #098193;
+        border:solid .5px white;
+        border-radius:50px;
+        padding:1em;
+        text-align:center;
+        margin: auto;
+        position:relative;
+        line-height:0px;
+        box-shadow: 0 5px 9.5px 0 #103f45;
+        p{
+            font-size: 13px;
+            color:#098193;
+            text-align:center;
+            font-weight:bold;
+        }
+    }
+}
+.home-hello{
+    max-width: 642px;
+    color:white;
+    margin: auto;
+    margin-bottom: 30px;
+    p{
+        font-size:2em;
+        font-weight:lighter;
+        font-family:$mont;
+        @include screen(s,max){
+            font-size: 1.5em;
+        }
+    }
+}
+.login-hello{
+    font-family:$mont;
+    color:white;
+    height:12px;
+    margin-bottom:15px;
+}
+.need-help{
+    margin-top: 25px;
+    p{
+        font-family: $open;
+        color: white;
+         text-align: center;
+     }
+       a{color: white;font-weight:lighter;}
 }

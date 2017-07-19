@@ -1,0 +1,19 @@
+
+
+/*
+  MEDIA QUERY mixin
+  default is for smallscreen-up using breakpoint shortcuts, 
+  but mixin also accepts $size and $direction params, e.g., 
+  `@include screen(800px, max) {}` returns `@media screen and (max-width: 800px) {}` for custom tweaking
+*/
+@mixin screen($size, $direction: min) {
+  @if map-has-key($breakpoints, $size) {
+    @media screen and (#{$direction}-width: map-get($breakpoints, $size)) {
+        @content;
+    }
+  } @else {
+    @media screen and (#{$direction}-width: $size) {
+        @content;
+    }
+  }
+}

@@ -1,18 +1,47 @@
+<app-topnav></app-topnav>
+<app-sidenav></app-sidenav> 
 <div class="dashboard-container">
-
     <div class="inroute-container provision-cards">
         <div class="container-title">
             <p class="title-name">In Transport</p>
         </div>
         <div class="card-list-view">
             <ul>
-                <li>one</li>
-                <li>two</li>
-                <li>tree</li>
+                <li class="row">
+                    <div class="col s5">
+                        Left
+                    </div>
+                    <div class="col s2">
+                        Icon
+                    </div>
+                    <div class="col s5">
+                        Right
+                    </div>
+                </li>
             </ul>
         </div>
     </div><!--inroute-container-->
     
+        <div class="pending-container provision-cards">
+        <div class="container-title">
+            <p class="title-name">Interim</p>
+        </div>
+        <div class="card-list-view">
+            <ul>
+                <li class="row">
+                    <div class="col s5">
+                        Left
+                    </div>
+                    <div class="col s2">
+                        Icon
+                    </div>
+                    <div class="col s5">
+                        Right
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div><!--pending-container-->
     <div class="available-container provision-cards">
         <div class="container-title container-view-all">
             <p class="title-name">Available</p>
@@ -26,7 +55,28 @@
             </ul>
         </div>
     </div><!--inroute-container-->
-  
+
+    <div class="completed-container provision-cards">
+        <div class="container-title container-view-all">
+            <p class="title-name">Completed</p>
+            <p class="view-all" id="view-all"><a href="#modal1">View All</a></p>
+        </div>
+        <div class="card-list-view">
+            <ul>
+                <li class="row">
+                    <div class="col s5">
+                        Left
+                    </div>
+                    <div class="col s2">
+                        Icon
+                    </div>
+                    <div class="col s5">
+                        Right
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div><!--completed-container-->
 </div><!--dashboard-container/ padding-->
 
 <div id="modal1" class="modal">
@@ -60,7 +110,8 @@
             </ul>
         </div>
     </div><!--available-offers-->
-    
+
+
     <div class="offer-detail">
         <p>8 gallons of milk</p>
         <div class="offer-collection">

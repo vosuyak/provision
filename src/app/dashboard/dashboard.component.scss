@@ -54,7 +54,7 @@
 }//inroute-container
 .available-container{
     .card-list-view{
-        border: solid 2px orange;
+        border: solid 2px blue;
         ul{
             margin:0;
             li{
@@ -63,6 +63,28 @@
         }
     }
 }//available-container
+.pending-container{
+    .card-list-view{
+        border: solid 2px yellow;
+        ul{
+            margin:0;
+            li{
+                
+            }
+        }
+    }
+}//pending-container
+.completed-container{
+    .card-list-view{
+        border: solid 2px gray;
+        ul{
+            margin:0;
+            li{
+                
+            }
+        }
+    }
+}//completed-container
 .available-offers-container{
     .available-title{
         font-weight:bold;
